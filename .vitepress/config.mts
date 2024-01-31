@@ -2,6 +2,7 @@ import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: '/docs-frontend/',
     title: "Xiao Nan's Frontend-docs",
     description: "Xiao Nan's Fronted-docs",
     themeConfig: {
