@@ -37,9 +37,9 @@ jobs:
         run: npm ci # 安装依赖
       - name: Build with VitePress
         run: |
-          touch .nojekyll  # 通知githubpages不要使用Jekyll处理这个站点
           npm run docs:build # 启动项目
-          
+          mkdir docs
+          touch docs/.nojekyll  # 通知githubpages不要使用Jekyll处理这个站点  
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3  # 上传构建产物
         with:
